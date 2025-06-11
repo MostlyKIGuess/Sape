@@ -1,0 +1,13 @@
+streamlit
+basic-pitch[tf]
+audio-recorder-streamlit
+crepe
+music21
+pretty_midi
+streamlit-drawable-canvas
+librosa
+numpy
+matplotlib
+scipy
+tensorflow
+soundfile

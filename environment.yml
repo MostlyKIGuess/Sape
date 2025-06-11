@@ -1,0 +1,21 @@
+name: music-transcription
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10  
+  - pip
+  - tensorflow 
+  - numpy
+  - matplotlib
+  - scipy
+  - librosa
+  - pip:
+      - streamlit
+      - "basic-pitch[tf]"
+      - audio-recorder-streamlit
+      - crepe
+      - music21
+      - pretty_midi
+      - streamlit-drawable-canvas
+      - soundfile
