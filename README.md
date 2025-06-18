@@ -17,9 +17,12 @@ streamlit run app.py
 - **Audio-to-MIDI**: Upload/record audio, get MIDI using Basic Pitch
 - **Whistle-to-Sheet**: Whistle melodies become sheet music  
 - **Draw-to-Music**: Paint sounds where X=time, Y=pitch
+- **Image-To-MusicXML**: Give an image -> get the MusicXML :)
 
 ## Tech Stack
 
-Streamlit + Basic Pitch + CREPE + Pretty MIDI + Librosa
+Streamlit + Basic Pitch + CREPE + Pretty MIDI + Librosa + OEMER
+
+Thank you to all the amazing authors who made the original foundational models.
 
 
