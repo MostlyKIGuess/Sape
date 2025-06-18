@@ -11,3 +11,4 @@ matplotlib
 scipy
 tensorflow
 soundfile
+oemer[tf]

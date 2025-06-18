@@ -19,3 +19,4 @@ dependencies:
       - pretty_midi
       - streamlit-drawable-canvas
       - soundfile
+      - oemer[tf]

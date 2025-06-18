@@ -6,6 +6,7 @@ from basic_pitch import ICASSP_2022_MODEL_PATH
 from audio_to_midi import render_audio_to_midi_ui
 from whistle_to_sheet import render_whistle_to_sheet_ui
 from draw_to_music import render_draw_to_music_ui
+from image_to_musicxml import render_image_to_musicxml_ui
 
 logging.basicConfig(level=logging.ERROR)
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
@@ -19,7 +20,7 @@ def main():
 
     mode = st.selectbox(
         "Choose conversion mode:",
-        ["Whistle-to-Sheet","Audio-to-MIDI", "Draw-to-Music"],
+        ["Whistle-to-Sheet","Audio-to-MIDI", "Draw-to-Music", "Image-to-MusicXML"],
         label_visibility="collapsed"
     )
     st.markdown("<br>", unsafe_allow_html=True)
@@ -36,6 +37,8 @@ def main():
         render_whistle_to_sheet_ui()
     elif mode == "Draw-to-Music":
         render_draw_to_music_ui()
+    elif mode == "Image-to-MusicXML":
+        render_image_to_musicxml_ui()
     else:
         st.error("Unknown mode selected.")
 
